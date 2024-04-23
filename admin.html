@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RE Clean</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/tab.png" type="image/logo">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body id="body">
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img class="img-fluid logo" src="images/tab.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-5 ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="login.html">Admin</a>
+                  </li>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <section class="bg-3 text-center mt-5 flip">
+        <div class="p-5"></div>
+        <div class="p-5"></div>
+        <h1>Admin</h1>
+        <div class="p-5"></div>
+        <div class="p-5"></div>
+    </section>
+
+    <section class="mt-5">
+        <h1 class="text-center">Invoice Generator</h1>
+
+        <form>
+            <div class="container">
+
+                <div class="form-row row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4">Invoice id:</label>
+                      <input type="text" class="form-control" id="invoiceIdInput" placeholder="#0000">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4">Phone number:</label>
+                      <input type="number" class="form-control" id="phoneNumberInput" placeholder="000 000 0000">
+                    </div>
+                  </div>
+
+
+            <div class="form-row row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Name:</label>
+                <input type="text" class="form-control" id="nameInput" placeholder="John">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Vehicle:</label>
+                <input type="text" class="form-control" id="vehicleInput" placeholder="Car">
+              </div>
+            </div>
+            <div class="row">
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">KL No:</label>
+                <input type="text" class="form-control" id="klNoInput" placeholder="KL 00 AB 0000">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Date:</label>
+                <input type="date" class="form-control" id="dateInput" placeholder="Date">
+              </div>
+
+            </div>
+
+              <hr class=" mt-5">
+
+              <h3 class="text-center">Table row 1</h3>
+
+              <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="inputState">Description:</label>
+                    <select id="row1DescriptionInput" class="form-control">
+                      <option value="" selected>Choose...</option>
+                      <option value="Mat cleaning">Mat cleaning</option>
+                      <option value="In total">In total</option>
+                      <option value="Tire">Tire</option>
+                      <option value="Out total">Out total</option>
+                      <option value="Accessory">Accessory</option>
+                    </select>
+                  </div>
+
+              <div class="form-group col-md-6">
+                <label for="inputState">QTY:</label>
+                <select id="row1QtyInput" class="form-control">
+                  <option value="" selected>Choose...</option>
+                  <option value="1" >1</option>
+                  <option value="2" >2</option>
+                  <option value="3" >3</option>
+                  <option value="4" >4</option>
+                  <option value="5" >5</option>
+                </select>
+              </div>
+            </div>
+<div class="row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">C fee:</label>
+                <input type="number" class="form-control" id="row1CFeeInput" placeholder="0">
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Total:</label>
+                <input type="number" class="form-control" id="row1TotalInput" placeholder="0">
+              </div>
+            </div>
+
+            <hr class=" mt-5">
+
+              <h3 class="text-center">Table row 2</h3>
+
+              <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="inputState">Description:</label>
+                    <select id="row2DescriptionInput" class="form-control">
+                      <option value="" selected>Choose...</option>
+                      <option value="Mat cleaning">Mat cleaning</option>
+                      <option value="In total">In total</option>
+                      <option value="Tire">Tire</option>
+                      <option value="Out total">Out total</option>
+                      <option value="Accessory">Accessory</option>
+                    </select>
+                  </div>
+
+              <div class="form-group col-md-6">
+                <label for="inputState">QTY:</label>
+                <select id="row2QtyInput" class="form-control">
+                  <option value="" selected>Choose...</option>
+                  <option value="1" >1</option>
+                  <option value="2" >2</option>
+                  <option value="3" >3</option>
+                  <option value="4" >4</option>
+                  <option value="5" >5</option>
+                </select>
+              </div>
+            </div>
+<div class="row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">C fee:</label>
+                <input type="number" class="form-control" id="row2CFeeInput" placeholder="0">
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Total:</label>
+                <input type="number" class="form-control" id="row2TotalInput" placeholder="0">
+              </div>
+            </div>
+
+            <hr class=" mt-5">
+
+              <h3 class="text-center">Table row 3</h3>
+
+              <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="inputState">Description:</label>
+                    <select id="row3DescriptionInput" class="form-control">
+                      <option value="" selected>Choose...</option>
+                      <option value="Mat cleaning">Mat cleaning</option>
+                      <option value="In total">In total</option>
+                      <option value="Tire">Tire</option>
+                      <option value="Out total">Out total</option>
+                      <option value="Accessory">Accessory</option>
+                    </select>
+                  </div>
+
+              <div class="form-group col-md-6">
+                <label for="inputState">QTY:</label>
+                <select id="row3QtyInput" class="form-control">
+                  <option value="" selected>Choose...</option>
+                  <option value="1" >1</option>
+                  <option value="2" >2</option>
+                  <option value="3" >3</option>
+                  <option value="4" >4</option>
+                  <option value="5" >5</option>
+                </select>
+              </div>
+            </div>
+<div class="row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">C fee:</label>
+                <input type="number" class="form-control" id="row3CFeeInput" placeholder="0">
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Total:</label>
+                <input type="number" class="form-control" id="row3TotalInput" placeholder="0">
+              </div>
+            </div>
+
+            <hr class=" mt-5">
+
+              <h3 class="text-center">Table row 4</h3>
+
+              <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="inputState">Description:</label>
+                    <select id="row4DescriptionInput" class="form-control">
+                      <option value="" selected>Choose...</option>
+                      <option value="Mat cleaning">Mat cleaning</option>
+                      <option value="In total">In total</option>
+                      <option value="Tire">Tire</option>
+                      <option value="Out total">Out total</option>
+                      <option value="Accessory">Accessory</option>
+                    </select>
+                  </div>
+
+              <div class="form-group col-md-6">
+                <label for="inputState">QTY:</label>
+                <select id="row4QtyInput" class="form-control">
+                  <option value="" selected>Choose...</option>
+                  <option value="1" >1</option>
+                  <option value="2" >2</option>
+                  <option value="3" >3</option>
+                  <option value="4" >4</option>
+                  <option value="5" >5</option>
+                </select>
+              </div>
+            </div>
+<div class="row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">C fee:</label>
+                <input type="number" class="form-control" id="row4CFeeInput" placeholder="0">
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Total:</label>
+                <input type="number" class="form-control" id="row4TotalInput" placeholder="0">
+              </div>
+            </div>
+
+            <hr class="mt-5">
+
+              <h3 class="text-center">Table row 5</h3>
+
+              <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="inputState">Description:</label>
+                    <select id="row5DescriptionInput" class="form-control">
+                      <option value="" selected>Choose...</option>
+                      <option value="Mat cleaning">Mat cleaning</option>
+                      <option value="In total">In total</option>
+                      <option value="Tire">Tire</option>
+                      <option value="Out total">Out total</option>
+                      <option value="Accessory">Accessory</option>
+                    </select>
+                  </div>
+
+              <div class="form-group col-md-6">
+                <label for="inputState">QTY:</label>
+                <select id="row5QtyInput" class="form-control">
+                  <option value="" selected>Choose...</option>
+                  <option value="1" >1</option>
+                  <option value="2" >2</option>
+                  <option value="3" >3</option>
+                  <option value="4" >4</option>
+                  <option value="5" >5</option>
+                </select>
+              </div>
+            </div>
+<div class="row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">C fee:</label>
+                <input type="number" class="form-control" id="row5CFeeInput" placeholder="0">
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Total:</label>
+                <input type="number" class="form-control" id="row5TotalInput" placeholder="0">
+              </div>
+            </div>
+
+            <hr class="mt-5">
+
+            <h3 class="text-center">Details</h3>
+
+<div class="row">
+            <!-- <div class="form-group col-md-6">
+              <label for="inputEmail4">Sub total:</label>
+              <input type="number" class="form-control" id="subTotalInput" placeholder="0">
+            </div> -->
+
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Tax:</label>
+              <input type="text" class="form-control" id="taxInput" placeholder="0">
+            </div>
+
+          <!-- <div class="row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Total:</label>
+              <input type="number" class="form-control" id="totalInput" placeholder="0">
+            </div> -->
+
+            <div class="form-group col-md-6">
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Notes</label>
+                    <textarea class="form-control" id="notesInput" rows="3" placeholder="Hello"></textarea>
+                  </div>
+            </div>
+          </div>
+
+            <div class="align-items-center text-center mt-5">
+            <button type="button" class="btn btn-primary" onclick="generate()">Generate</button>
+        </div>
+        </div>
+          </form>
+    </section>
+
+    <div class="p-5"></div>
+    <section class="mt-5">
+        <div id="content">
+
+        <h1 class="text-center invoice-title">RE Clean</h1>
+        <div class="align-items-center text-center">
+        <img class="invoice-icon" src="images/tab.png" alt="">
+    </div>
+
+    <div class="mt-5">
+        <div class="container">
+        <div class="row">
+            <div class="col-6 col-md-6">
+                <h3>Ivoice ID:</h3><h4 id="invoiceIdOut"></h4>
+            </div>
+            <div class="col-6 col-md-6">
+                <h3>Name:</h3><h4 id="nameOut"></h4>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-6 col-md-6">
+                <h3>Phone Number:</h3><h4 id="phoneNumberOut"></h4>
+            </div>
+            <div class="col-6 col-md-6">
+                <h3>Vehicle:</h3><h4 id="vehicleOut"></h4>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-6 col-md-6">
+                <h3>KL NO:</h3><h4 id="klNoOut"></h4>
+            </div>
+            <div class="col-6 col-md-6">
+                <h3>Date:</h3><h4 id="dateOut"></h4>
+            </div>
+        </div>
+        <hr>
+
+        <div class="mt-5">
+            <table class="table  table-striped">
+                <thead>
+                  <tr>
+                    <th class="bg-dark text-white" scope="col">#</th>
+                    <th class="bg-dark text-white" scope="col">Description</th>
+                    <th class="bg-dark text-white" scope="col">qty</th>
+                    <th class="bg-dark text-white" scope="col">c fee</th>
+                    <th class="bg-dark text-white" scope="col">total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td id="row1DescriptionOut"></td>
+                    <td id="row1QtyOut"></td>
+                    <td id="row1CFeeOut"></td>
+                    <td id="row1TotalOut"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td id="row2DescriptionOut"></td>
+                    <td id="row2QtyOut"></td>
+                    <td id="row2CFeeOut"></td>
+                    <td id="row2TotalOut"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td id="row3DescriptionOut"></td>
+                    <td id="row3QtyOut"></td>
+                    <td id="row3CFeeOut"></td>
+                    <td id="row3TotalOut"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td id="row4DescriptionOut"></td>
+                    <td id="row4QtyOut"></td>
+                    <td id="row4CFeeOut"></td>
+                    <td id="row4TotalOut"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td id="row5DescriptionOut"></td>
+                    <td id="row5QtyOut"></td>
+                    <td id="row5CFeeOut"></td>
+                    <td id="row5TotalOut"></td>
+                  </tr>
+                  <tr>
+                    <th class="bg-dark text-white" scope="row">*</th>
+                    <td class="bg-dark text-white" colspan="3">Sub Total</td>
+                    <td class="bg-dark text-white" id="subTotalOut"></td>
+                  </tr>
+                  <tr>
+                    <th class="bg-dark text-white" scope="row">*</th>
+                    <td class="bg-dark text-white" colspan="3">Tax</td>
+                    <td class="bg-dark text-white" id="taxOut"></td>
+                  </tr>
+                  <tr>
+                    <th class="bg-dark text-white" scope="row">*</th>
+                    <td class="bg-dark text-white" colspan="3">Total</td>
+                    <td class="bg-dark text-white" id="totalOut"></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+
+        <div class="mt-5"></div>
+
+        <section>
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <h3>Notes:</h3><p id="notesOut"></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <img class="img-fluid" src="images/Reclean new invoice.png" alt="">
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12 col-md-12">
+                    <h5 class="text-center">This is Auto Generated Invoice</h5>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <img class="img-fluid" src="images/sign.png" alt="">
+            </div>
+        </section>
+
+    </div>
+
+        <div class="d-flex justify-content-center">
+            <button id="print" class="btn btn-primary" onclick="printPage()">Print</button>
+            </div>
+    </div>
+</div>
+
+    </section>
+
+
+
+    <footer class="mt-5 bg-dark text-white p-5 text-center">
+        <h3>&copy All rights resieved from RE CLEAN </h3>
+    </footer>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="invoice.js"></script>
+</body>
+</html>
