@@ -83,3 +83,7 @@
   body{
     scroll-behavior: smooth;
   }
+
+  .ad-img{
+    border-radius: 10px;
+  }
